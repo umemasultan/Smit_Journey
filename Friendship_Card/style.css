@@ -1,0 +1,76 @@
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      height: 100vh;
+      background: url("./flower.jpg") no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      width: 750px;
+      height: 700px;
+      border: 6px solid rgba(29, 89, 126, 0.6);
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(29, 89, 126, 0.6);
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("./four girl.jpg") no-repeat center bottom/cover;
+      filter: blur(6px) brightness(0.7);
+      transform: scale(1.1);
+      z-index: 0;
+    }
+    .card2 {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: white;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent 60%);
+    }
+    .card2 h1 {
+      color: #e8f6ff;
+      font-size: 2rem;
+      background-color: rgba(255, 255, 255, 0.2);
+      width: 300px;
+      margin: 0 auto 20px; 
+      padding: 6px 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .card2 h2 {
+      font-size: 1.2rem;
+      color: #fff;
+      margin: 10px auto 25px;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 10px 18px;
+      border-radius: 12px;
+    }
+
+    .card2 p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: #f4faff;
+    }
+    .end-line {
+      font-size: 20px;
+      font-weight: bold;
+      color: #c3e4ff;
+      font-style: italic;
+    }
